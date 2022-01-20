@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Newbie 📷</title>
+    <style>
+      body {
+        background: linear-gradient(
+          68.6deg,
+          rgb(252, 165, 241) 1.8%,
+          rgb(181, 255, 255) 100.5%
+        );
+      }
+      h1,
+      h2,
+      h3,
+      p,
+      .types,
+      button,
+      .author {
+        text-align: center;
+        font-family: fantasy;
+      }
+
+      h1,
+      .author {
+        color: #6d42c7;
+      }
+
+      h2 {
+        color: #5e63b6;
+        border: 1px solid;
+        padding: 10px;
+        max-width: 667px;
+        margin: 25px auto;
+        border-radius: 10px;
+      }
+
+      img {
+        display: block;
+        margin: 25px auto;
+        border-radius: 10px;
+      }
+
+      p {
+        color: #085f63;
+        border: 1px solid;
+        padding: 10px;
+        max-width: 750px;
+        margin: 25px auto;
+        border-radius: 10px;
+      }
+      a {
+        color: #085f63;
+      }
+      h3 {
+        color: #c54c82;
+        text-decoration: underline;
+        margin: 25px auto;
+      }
+      .types {
+        color: #e95280;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      .types li {
+        padding: 10px 0;
+        margin: 0 auto;
+        max-width: 510px;
+        border-radius: 15px;
+        border: transparent 1px solid;
+      }
+      .types li:hover {
+        color: #005792;
+        border: 1px solid;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      button {
+        font-size: 15px;
+        background-color: #d33971;
+        color: white;
+        margin: 0 auto;
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+      button:hover {
+        background-color: rgb(14, 14, 236);
+        opacity: 0.6;
+        color: white;
+        transition: all 200ms ease-in-out；;
+        cursor: pointer;
+      }
+      .author {
+        text-align: center;
+        padding: 20px;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Photography Newbie 📸</h1>
+    <h2>Do you want to know more about Photography? Keep reading!</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/565/original/1_mj2XchE7URhgdhX63NbW0A.jpeg?1633817339"
+      width="300"
+      alt="man holding camera"
+    />
+    <p>
+      Photography is the art, application, and practice of creating durable
+      images by recording light, either electronically by means of an image
+      sensor, or chemically by means of a light-sensitive material such as
+      photographic film.
+      <br />
+      It is employed in many fields of science, manufacturing (e.g.,
+      photolithography), and business, as well as its more direct uses for art,
+      film and video production, recreational purposes, hobby, and mass
+      communication.
+      <a href="https://en.wikipedia.org/wiki/Photography" target="_blank">
+        wiki <br />
+        Learn more on Wikipedia
+      </a>
+    </p>
+    <img src =
+    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/566/original/photog1.jpeg?1633817374
+    width= "300" alt= "man shooting with camera" />
+    <h3>Type of Photography 📷</h3>
+    <ul class="types">
+      <li>
+        <strong>Portrait Photography 🙎🏻‍♀️ </strong>
+        <br />
+        <em>Capture the personality and mood of an individual or group</em>
+      </li>
+      <li>
+        <strong>Fashion Photography 👗 </strong>
+        <br />
+        <em
+          >Usually incorporates models and is a form of advertising
+          photography</em
+        >
+      </li>
+      <li>
+        <strong>Wildlife Photography 🦭 </strong>
+        <br />
+        <em>Demonstrates the life of wild animals</em>
+      </li>
+      <li>
+        <strong>360 Product Photography 👀 </strong>
+        <br />
+        <em
+          >Displays a series of photos to give the impression of a rotating
+          object</em
+        >
+      </li>
+    </ul>
+    <button>Get A Free Postcard 👋👋</button>
+    <div class="author">
+      Coded by NY 😸 Not for commercial uses, coding practice only
+    </div>
+    <script>
+      function freeGift() {
+        let name = prompt("Hey, what is your name?");
+        let email = prompt("Please leave your email address.");
+
+        if (name !== "" && email !== "") {
+          alert(
+            "Hello " +
+              name +
+              ", Check your mailbox! A free postcard has been sent to you!"
+          );
+        } else {
+          alert("You just missed a freebie!");
+        }
+      }
+      let clickButton = document.querySelector("button");
+      clickButton.addEventListener("click", freeGift);
+    </script>
+  </body>
+</html>
